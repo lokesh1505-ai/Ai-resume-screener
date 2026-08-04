@@ -69,12 +69,15 @@ Open your browser and access the local Streamlit URL.
 
 ## 📸 Screenshots
 
-> Add screenshots of:
->
-> - Home Page
-> - Resume Upload
-> - ATS Score
-> - Generated PDF Report
+
+### Home Page
+![Home](screenshots/home.png.png)
+
+### Results
+![Results](screenshots/results.png.png)
+
+### PDF Report
+![Report](screenshots/report.png.png)
 
 ---
 
