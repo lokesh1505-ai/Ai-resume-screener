@@ -1,44 +1,106 @@
-# AI Resume Screening System
+# 🤖 AI Resume Screener
 
-Ranks resumes against a job description using TF-IDF + cosine similarity,
-plus simple skill and experience extraction.
+An AI-powered resume screening application that evaluates resumes against job descriptions using Natural Language Processing (NLP), semantic similarity, and ATS scoring techniques.
 
-## Setup
+## ✨ Features
+
+- 📄 Upload Resume (PDF)
+- 🎯 ATS Score Analysis
+- 🧠 Semantic Matching
+- 💼 Skill Extraction
+- 📊 Experience Analysis
+- 📑 PDF Report Generation
+- ⚡ Simple Streamlit Interface
+
+## 🛠️ Tech Stack
+
+- Python
+- Streamlit
+- Scikit-learn
+- TF-IDF
+- Cosine Similarity
+- NLP
+- PDF Processing
+
+## 📂 Project Structure
+
+```
+AI-resume-screener/
+├── app.py
+├── ats_analyzer.py
+├── parser.py
+├── experience_parser.py
+├── semantic_matcher.py
+├── report_generator.py
+├── screener.py
+
+
+## 🚀 Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/lokesh1505-ai/AI-resume-screener.git
+```
+
+2. Navigate to the project
+
+```bash
+cd AI-resume-screener
+```
+
+3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run
+## ▶️ Usage
+
+Run the application using:
 
 ```bash
 streamlit run app.py
 ```
 
-This opens a browser UI where you:
-1. Paste the job description in the sidebar
-2. List required skills (comma-separated)
-3. Upload one or more resumes (PDF, DOCX, or TXT)
-4. Click "Screen Resumes" to see a ranked list with match %, matched skills,
-   and detected years of experience
+Open your browser and access the local Streamlit URL.
 
-## How it works
+---
 
-- `utils/parser.py` — extracts raw text from PDF/DOCX/TXT files
-- `utils/screener.py` — cleans text, builds TF-IDF vectors for the JD and
-  each resume, and scores similarity with cosine similarity. Also does
-  regex-based skill matching and experience-year extraction
-- `app.py` — Streamlit front end tying it together
+## 📸 Screenshots
 
-## Next steps to level this up
+> Add screenshots of:
+>
+> - Home Page
+> - Resume Upload
+> - ATS Score
+> - Generated PDF Report
 
-- Swap TF-IDF for embeddings (`sentence-transformers`, e.g. `all-MiniLM-L6-v2`)
-  for semantic matching instead of keyword overlap
-- Use spaCy NER or a resume-parsing library (e.g. `pyresparser`) to pull out
-  structured fields: education, job titles, companies
-- Add a weighted scoring formula (e.g. 50% similarity + 30% skills + 20%
-  experience) instead of ranking by similarity alone
-- Store results in a database and add a "shortlist" / feedback loop so the
-  system can learn from recruiter decisions
-- Add bias checks — audit whether the model is picking up on
-  proxies for age, gender, or name origin
+---
+
+## 🎯 Future Improvements
+
+- Support DOCX resumes
+- AI interview question generation
+- Resume improvement suggestions
+- Multiple resume comparison
+- Job recommendation system
+
+---
+
+## 👨‍💻 Author
+
+**Lokesh Baskaran**
+
+- 🎓 B.Tech Information Technology Graduate
+- 🤖 AI Engineer | Software Developer
+- 🌐 Portfolio: https://lokesh-portfolio-website.lovable.app
+- 💼 LinkedIn: https://www.linkedin.com/in/lokesh-baskaran-7433b2278
+- 📧 Email: lokeshbaskaran1505@gmail.com
+
+---
+
+⭐ If you found this project useful, consider giving it a Star!
+├── requirements.txt
+└── README.md
+```
