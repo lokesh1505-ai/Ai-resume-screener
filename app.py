@@ -1,11 +1,11 @@
 import streamlit as st
 import tempfile
 import os
-fromparser import extract_text
-fromscreener import rank_resumes
-fromats_analyzer import analyze_resume
-fromsemantic_matcher import load_model, semantic_similarity
-fromreport_generator import generate_report
+from parser import extract_text
+from screener import rank_resumes
+from ats_analyzer import analyze_resume
+from semantic_matcher import load_model, semantic_similarity
+from report_generator import generate_report
 
 st.set_page_config(page_title="AI Resume Screener", layout="wide")
 st.title("🤖 AI Resume Screening System")
