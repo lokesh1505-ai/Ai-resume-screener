@@ -1,5 +1,5 @@
 import re
-from utils.experience_parser import extract_years_experience as _extract_years_experience
+from experience_parser import extract_years_experience as _extract_years_experience
 
 
 ACTION_VERBS = [
