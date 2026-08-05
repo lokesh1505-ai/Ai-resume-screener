@@ -1,3 +1,8 @@
+## 🌐 Live Demo
+
+🚀 **Live App:** https://ai-resume-screener-n6g3qty9vyytremdqjqpx4a.streamlit.app
+
+
 # 🤖 AI Resume Screener
 
 An AI-powered resume screening application that evaluates resumes against job descriptions using Natural Language Processing (NLP), semantic similarity, and ATS scoring techniques.
